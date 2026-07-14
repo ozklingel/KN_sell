@@ -34,7 +34,7 @@ body{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.45);
+    background:rgba(0,0,0,0.45);
 }
 
 .hero-content{
@@ -50,8 +50,8 @@ body{
 }
 
 .hero p{
-    font-size:1.3rem;
-    max-width:700px;
+    font-size:1.2rem;
+    max-width:800px;
     margin:auto;
 }
 
@@ -63,13 +63,13 @@ body{
 
 .section-title{
     text-align:center;
-    margin-bottom:50px;
-    font-size:2.2rem;
+    margin-bottom:40px;
+    font-size:2rem;
 }
 
 .features{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
@@ -78,7 +78,6 @@ body{
     padding:25px;
     border-radius:18px;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    font-size:1.1rem;
 }
 
 .view-section{
@@ -94,26 +93,20 @@ body{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.45);
+    background:rgba(0,0,0,0.4);
 }
 
 .view-content{
     position:relative;
     color:white;
     text-align:center;
-    max-width:700px;
     padding:20px;
-}
-
-.view-content h2{
-    font-size:2.5rem;
-    margin-bottom:15px;
 }
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
 }
 
 .gallery img{
@@ -121,7 +114,7 @@ body{
     height:350px;
     object-fit:cover;
     border-radius:18px;
-    box-shadow:0 6px 18px rgba(0,0,0,.12);
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
     transition:0.3s;
 }
 
@@ -137,12 +130,12 @@ body{
 
 .btn{
     display:inline-block;
-    padding:15px 30px;
     margin:10px;
-    text-decoration:none;
+    padding:15px 30px;
     border-radius:12px;
-    font-weight:bold;
+    text-decoration:none;
     color:white;
+    font-weight:bold;
 }
 
 .phone{
@@ -170,7 +163,7 @@ footer{
 }
 
 .gallery img{
-    height:280px;
+    height:250px;
 }
 
 }
@@ -180,17 +173,15 @@ footer{
 <body>
 
 <section class="hero">
-
     <div class="hero-content">
         <h1>🏡 דירת 4.5 חדרים להשכרה בקריית נטפים</h1>
 
         <p>
             בית מרווח ומעוצב שתוכנן באהבה,
             עם מרפסת גדולה לנוף פתוח,
-            מטבח כפרי ייחודי ומיזוג VRF בכל חדר.
+            מטבח כפרי ייחודי, אי ענק ומיזוג VRF בכל חדר.
         </p>
     </div>
-
 </section>
 
 <section class="container">
@@ -198,38 +189,27 @@ footer{
     <h2 class="section-title">למה תתאהבו בבית הזה?</h2>
 
     <div class="features">
-
-        <div class="feature">🌼 דירת 4.5 חדרים מרווחת ונעימה</div>
-
-        <div class="feature">🌼 מרפסת גדולה עם נוף פתוח ומדהים</div>
-
-        <div class="feature">🌼 גופי תאורה מעוצבים בכל הבית</div>
-
-        <div class="feature">🌼 מטבח כפרי בתכנון אישי</div>
-
-        <div class="feature">🌼 שפע אחסון ומחשבה על כל פרט</div>
-
+        <div class="feature">🌼 דירת 4.5 חדרים מרווחת</div>
+        <div class="feature">🌼 מרפסת גדולה לנוף פתוח</div>
+        <div class="feature">🌼 גופי תאורה יפיפיים בכל הבית</div>
+        <div class="feature">🌼 מטבח כפרי בעיצוב אישי</div>
+        <div class="feature">🌼 שפע אחסון ותכנון מוקפד</div>
         <div class="feature">🌼 אי גדול עם משטח שיש ענק</div>
-
-        <div class="feature">🌼 מערכת מיזוג VRF בכל חדר</div>
-
+        <div class="feature">🌼 מיזוג VRF בכל חדר</div>
         <div class="feature">🌼 בית מושקע ברמת גימור גבוהה</div>
-
     </div>
 
 </section>
 
 <section class="view-section">
-
     <div class="view-content">
-        <h2>🌄 נוף פתוח מכל הלב</h2>
+        <h2>🌄 נוף פתוח ומרגיע</h2>
 
         <p>
-            ליהנות מדי יום ממרפסת ענקית,
-            אוויר פתוח ונוף ירוק ומרגיע.
+            ליהנות מכל בוקר ממרפסת גדולה,
+            אוויר פתוח ונוף ירוק ומדהים.
         </p>
     </div>
-
 </section>
 
 <section class="container">
@@ -238,21 +218,21 @@ footer{
 
     <div class="gallery">
 
-        <img src="living-room.jpg" alt="סלון">
+        " alt="סלון">
 
-        kitchen-main.jpg="מטבח">
+        kitchen-main.jpg" alt="מטבח">
 
-        itchen-island.jpg" alt="אי במטבח">
+        kitchen-island.jpg" alt="אי במטבח">
 
-        .jpg" alt="מטבח רחב">
+        <img src="kitchen-wide.jpg" alt="מטבח רחב">
 
-        cony-seating.jpg" alt="מרפסת">
+        <img src="balcony-seating.jpg" alt="מרפסת">
 
         <img src="balcony-view.jpg" alt="נוף מהמרפסת">
 
         <img src="view-open.jpg" alt="נוף פתוח">
 
-        <img src="bathroom.jpg" alt="חדר רחצה">
+        " alt="חדר רחצה">
 
     </div>
 
@@ -269,11 +249,11 @@ footer{
 
     <br>
 
-    tel:0544515430
+    4515430" class="btn phone">
         📞 אלה - 054‑451‑5430
     </a>
 
-    .me/972544515430"
+    <a href="https://wa.me/972544515430"
        target="_blank"
        class="btn whatsapp">
         💬 WhatsApp

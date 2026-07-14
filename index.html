@@ -3,12 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>בדיקת תמונות</title>
+
+<title>דירה להשכרה בקריית נטפים</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    font-family:Arial;
+    font-family:Arial, sans-serif;
+    background:#f8f6f2;
+    color:#333;
+    line-height:1.7;
+}
+
+.hero{
+    height:100vh;
+    background:url("living-room.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
     padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    max-width:800px;
+    margin:auto;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:40px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.view-section{
+    background:url("view-open.jpg") center center/cover;
+    min-height:400px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.view-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.view-content{
+    position:relative;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.view-content h2{
+    font-size:2.5rem;
+    margin-bottom:10px;
 }
 
 .gallery{
@@ -19,25 +116,166 @@ body{
 
 .gallery img{
     width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:16px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.contact{
+    background:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
     border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    margin:10px;
+}
+
+.phone{
+    background:#2e7d32;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#f0ede8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.gallery img{
+    height:250px;
+}
+
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<h1>בדיקת תמונות</h1>
+<section class="hero">
+    <div class="hero-content">
+        <h1>🏡 דירת 4.5 חדרים להשכרה בקריית נטפים</h1>
 
-<div class="gallery">
-    living-room.jpg" alt="סלון">
-    kitchen-main.jpg" alt="מטבח">
-    kitchen-island.jpg" alt="אי">
-    kitchen-wide.jpg" alt="מטבח רחב">
-    <img src="balcony-seating.jpg" alt="מרפסת">
-    <img src="balcony-view.jpg" alt="נוף">
-    <img src="view-open.jpg" alt="נוף פתוח">
-    <img src="bathroom.jpg" alt="חדר רחצה">
-</div>
+        <p>
+            בית מרווח ומעוצב שתוכנן באהבה,
+            עם מרפסת גדולה לנוף פתוח,
+            מטבח כפרי ייחודי, אי ענק ומיזוג VRF בכל חדר.
+        </p>
+    </div>
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">למה תתאהבו בבית הזה?</h2>
+
+    <div class="features">
+
+        <div class="feature">🌼 דירת 4.5 חדרים מרווחת ונעימה</div>
+
+        <div class="feature">🌼 מרפסת גדולה עם נוף פתוח</div>
+
+        <div class="feature">🌼 גופי תאורה מעוצבים בכל הבית</div>
+
+        <div class="feature">🌼 מטבח כפרי בעיצוב אישי</div>
+
+        <div class="feature">🌼 שפע אחסון ותכנון מוקפד</div>
+
+        <div class="feature">🌼 אי גדול עם משטח שיש ענק</div>
+
+        <div class="feature">🌼 מערכת VRF בכל חדר</div>
+
+        <div class="feature">🌼 בית מושקע ברמת גימור גבוהה</div>
+
+    </div>
+
+</section>
+
+<section class="view-section">
+    <div class="view-content">
+        <h2>🌄 נוף פתוח ומרהיב</h2>
+        <p>
+            ליהנות מאוויר פתוח ונוף ירוק בכל יום.
+        </p>
+    </div>
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">📸 גלריית תמונות</h2>
+
+    <div class="gallery">
+
+        <img src="living-room.jpg" alt="סלון">
+
+        <img src="kitchen-main.jpg" alt="מטבח">
+
+        kitchen-island.jpg
+
+        <img src="kitchen-wide.jpg" alt="מטבח רחב">
+
+        " alt="מרפסת">
+
+        -view.jpg" alt="נוף מהמרפסת">
+
+        <img src="view-open.jpg" alt="נוף פתוח">
+
+        <img src="bathroom.jpg" alt="חדר רחצה">
+
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <h2>🌺 כניסה בספטמבר</h2>
+
+    <p>
+        אנחנו מחפשים משפחה מהממת שתרצה להתפנק
+        ולגור בבית היפה שבנינו לעצמנו.
+    </p>
+
+    <br>
+
+    tel:0544515430
+        📞 אלה - 054‑451‑5430
+    </a>
+
+    972544515430"
+       target="_blank"
+       class="btn whatsapp">
+        💬 WhatsApp
+    </a>
+
+</section>
+
+<footer>
+    קריית נטפים • דירה להשכרה 🏡
+</footer>
 
 </body>
 </html>
